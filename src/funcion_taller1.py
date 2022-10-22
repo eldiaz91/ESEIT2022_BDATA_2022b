@@ -37,7 +37,7 @@ def save_data(df, filename):
     
     #Guardar Tabla en BigQuery
     print("Cargando archivo :",filename)
-    df.to_gbq(destination_table='espbigdata.llamadas_123_copy', if_exists='append')
+    df.to_gbq(destination_table='espbigdata.llamadas_123', if_exists='append')
 
 def convertir_fecha(str_fecha):
     date_fecha=parse(str_fecha, dayfirst =True)  
